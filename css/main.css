@@ -29,151 +29,144 @@ footer {
   position: fixed;
   top: 0;
   background: black;
-  width: 99.0740740741%;
-  float: left;
-  margin-left: 0.462962963%;
-  margin-right: 0.462962963%;
+  width: 100%;
   height: 100vh;
   z-index: 20;
   opacity: .8;
   display: none;
   transition: .6s; }
 
-.leftside {
-  width: 99.0740740741%;
+.logo {
+  overflow: hidden;
+  position: fixed;
+  padding: 20px 0px 30px 0px;
+  top: 0px;
+  z-index: 20;
+  left: -1px;
+  color: white !important;
+  transition: .6s; }
+  .logo .name {
+    transition: .6s;
+    width: 99.0740740741%;
+    float: left;
+    margin-left: 0.462962963%;
+    margin-right: 0.462962963%;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 10px;
+    margin-top: -20px;
+    font-size: 30pt;
+    font-family: "Playfair Display", serif;
+    font-weight: 100; }
+    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      .logo .name {
+        font-size: 50pt; } }
+  .logo:hover {
+    opacity: 1 !important;
+    cursor: pointer; }
+  .logo p {
+    font-size: 9pt;
+    font-weight: 100;
+    line-height: 15.6pt;
+    font-family: "Libre Baskerville", serif;
+    padding-left: 40px; }
+  .logo h2 {
+    padding-top: 20px;
+    font-size: 10pt;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    line-height: 15pt;
+    padding-left: 40px; }
+  .logo a {
+    display: block; }
+
+.menuicon {
+  cursor: pointer;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+  left: 300px;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  font-size: 30pt;
+  background-color: black;
+  color: white;
+  transition: .6s; }
+  .menuicon img {
+    pointer: cursor;
+    width: 100%; }
+  .menuicon:hover {
+    opacity: 1 !important; }
+
+.popupmenu {
+  display: none; }
+
+.navItem {
+  width: 24.0740740741%;
   float: left;
   margin-left: 0.462962963%;
   margin-right: 0.462962963%;
   position: fixed;
+  z-index: 20;
+  margin: 0;
+  top: 45%;
+  left: 18%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  color: white;
+  transition: .6s; }
+  .navItem a {
+    display: block;
+    padding-top: 20px;
+    font-size: 15pt;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    line-height: 30pt;
+    text-transform: uppercase;
+    transition: .6s; }
+    .navItem a:hover {
+      letter-spacing: 5pt;
+      transition: .6s;
+      color: yellow; }
+
+.about {
+  width: 35.7407407407%;
+  float: left;
+  margin-left: 0.462962963%;
+  margin-right: 0.462962963%;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  padding: 10px;
+  color: white; }
+  .about p {
+    font-size: 20pt;
+    font-weight: 100;
+    line-height: 30pt;
+    font-family: "Libre Baskerville", serif;
+    color: white; }
+
+.nav {
   top: 23px;
-  padding-bottom: 20px;
-  z-index: 10;
-  mix-blend-mode: multiply; }
-  .leftside h1 {
-    width: 49.0740740741%;
-    float: left;
-    margin-left: 0.462962963%;
-    margin-right: 0.462962963%;
-    margin: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+  z-index: 20;
+  background-color: black;
+  display: none;
+  position: fixed;
+  left: 15px; }
+  .nav h3 {
+    margin: 5px;
     text-transform: uppercase;
-    font-size: 50pt;
-    font-family: "Playfair Display", serif;
-    font-weight: 100; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside h1 {
-        font-size: 50pt; } }
-  .leftside h3 {
-    margin: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    padding: 5px 0 5px 10px;
     font-size: 20pt;
     color: white;
     font-family: "Playfair Display", serif;
-    font-weight: 100;
-    background-color: black; }
+    font-weight: 100; }
     @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside h3 {
+      .nav h3 {
         font-size: 50pt; } }
-  .leftside .nav {
-    display: none;
-    position: fixed;
-    left: 15px; }
-  .leftside .logo {
-    position: fixed;
-    left: 15px; }
-  .leftside h2 {
-    margin: 0 0 20px 30px;
-    font-size: 10pt;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 100;
-    line-height: 15pt; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside h2 {
-        font-size: 18pt;
-        line-height: 25pt;
-        max-width: 200ch; } }
-  .leftside a {
-    padding-right: 15px;
-    display: block; }
-  .leftside p {
-    font-size: 9pt;
-    font-family: "Libre Baskerville", serif;
-    padding: 0px 30px 0 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 15.6pt;
-    color: black;
-    font-weight: 100;
-    transition: .6s; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside p {
-        font-size: 15pt;
-        line-height: 25pt;
-        padding: 30px;
-        max-width: 200ch;
-        font-weight: 100;
-        color: slategrey; } }
-  .leftside .about {
-    width: 24.0740740741%;
-    float: left;
-    margin-left: 0.462962963%;
-    margin-right: 0.462962963%;
-    margin-left: 30px;
-    font-size: 11pt;
-    text-transform: uppercase;
-    margin-top: 2px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-    z-index: 0; }
-    .leftside .about:hover {
-      opacity: 0.5;
-      transition: .6s;
-      mix-blend-mode: multiply; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside .about {
-        font-size: 20pt;
-        margin-top: 30px; } }
-  .leftside .menu {
-    width: 24.0740740741%;
-    float: left;
-    margin-left: 0.462962963%;
-    margin-right: 0.462962963%;
-    margin-left: 30px;
-    font-size: 11pt;
-    text-transform: uppercase;
-    margin-top: 2px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-    z-index: 0; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside .menu {
-        font-size: 20pt;
-        margin-top: 30px; } }
-    .leftside .menu:hover {
-      opacity: 0.5;
-      transition: .6s;
-      mix-blend-mode: multiply; }
-  .leftside .list {
-    padding-top: 20px;
-    display: none;
-    overflow: hidden; }
-  .leftside .info {
-    padding-top: 20px;
-    display: none;
-    overflow: hidden; }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .leftside {
-      position: relative;
-      width: 99.0740740741%;
-      float: left;
-      margin-left: 0.462962963%;
-      margin-right: 0.462962963%;
-      top: 0px;
-      margin: 0 0 2.5vh 0; } }
 
 .rightside {
   width: 99.0740740741%;
@@ -294,7 +287,8 @@ footer {
   width: 300px;
   color: #434e58;
   transform: rotate(90deg);
-  font-family: "Libre Baskerville", serif; }
+  font-family: "Libre Baskerville", serif;
+  z-index: 400; }
   .title h1 {
     font-size: 15pt;
     font-weight: 100; }
