@@ -11,25 +11,26 @@
     transition: .6s;
 }
 //---------------Spacer---------------------------
-.bumber{
-    @include span(3);
-    height:50vh;
-    @include respond-to(medium-screens) { display: none; }
-}
+// .bumber{
+//     @include span(3);
+//     height:50vh;
+//     @include respond-to(medium-screens) { display: none; }
+// }
 //---------------menu / nav ---------------------------
 .leftside{
-    @include span(3);
-    position: fixed;
+    @include span(6);
+    position: absolute;
     top:23px;
     padding-bottom:20px;
-    background-color:$mainfill;
+    // background-color:white;
+    z-index: 10;
     h1{
         margin:0px;
         margin-top:0px;
         margin-bottom:20px;
         text-transform: uppercase;
         padding-left:25px;
-        font-size:35pt;
+        font-size:50pt;
         font-family: $oneserif;
         font-weight:100;    
         @include respond-to(medium-screens) {  
@@ -56,8 +57,6 @@
     }
 
     p{
-
-        // height: 0px;
         font-size:9pt;
         font-family: $twoserif;
         padding: 0px 30px 0 30px;
@@ -92,7 +91,6 @@
         cursor: pointer;
         z-index: 0;
         @include respond-to(medium-screens) { 
-
             font-size: 20pt;
             margin-top: 30px;
         }
@@ -129,12 +127,6 @@
         padding-top:20px;
         display: none;
         overflow: hidden;
-
-    }
-
-    .hr{
-        padding-bottom:20px;
-        border-top: $border;
     }
 
     @include respond-to(medium-screens) { 
@@ -146,14 +138,17 @@
 }
 //---------------Main Content Container and Type Style's---------------------------
 .rightside{
-    @include span(9);
+    @include span(12);
     @include respond-to(medium-screens) { @include span($full); }
 }
 //---------------Content---------------------------
 .item{
     transition: .2s;
+    @include span(6);
+
     img{
-        max-height: 95vh;
+        max-width: 100%;
+        // max-height: 100vh;
         margin-top: 2.5vh;
         margin-bottom: 2.55vh;
     @include box-shadow($oneshadow);
@@ -196,6 +191,7 @@
         @include span($full); 
     }
 }
+
 //---------------Home Page Navagation---------------------------
 .item2{
     @include span(4);

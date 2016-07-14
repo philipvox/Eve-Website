@@ -5,13 +5,15 @@ $susy: (
 
 );
 
+main{
+    @include container(100%);
+}
+
 body{
     margin: 0;
     background-color:slategrey;
 }
-main{
-    @include container(100%);
-}
+
 a{
     text-decoration: none;
     color:inherit;
