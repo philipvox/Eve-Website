@@ -11,6 +11,20 @@ main {
     display: block;
     clear: both; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
+hr {
+  margin-right: 10px; }
+
+footer {
+  width: 82.4074074074%;
+  float: left;
+  margin-left: 0.462962963%;
+  margin-right: 0.462962963%;
+  height: 50vh; }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -24,10 +38,6 @@ main {
   opacity: .8;
   display: none;
   transition: .6s; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
 
 .bumber {
   width: 24.0740740741%;
@@ -48,14 +58,6 @@ a {
   top: 23px;
   padding-bottom: 20px;
   background-color: none; }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .leftside {
-      position: relative;
-      width: 99.0740740741%;
-      float: left;
-      margin-left: 0.462962963%;
-      margin-right: 0.462962963%;
-      top: 0px; } }
   @media only screen and (min-width: 321px) and (max-width: 1023px) {
     .leftside {
       width: 99.0740740741%;
@@ -126,23 +128,6 @@ a {
     padding-top: 20px;
     display: none;
     overflow: hidden; }
-  .leftside .up {
-    display: none;
-    width: 100%;
-    margin-left: 30px;
-    font-size: 11pt;
-    text-transform: uppercase;
-    margin-top: -15px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-    z-index: 0; }
-    .leftside .up:hover {
-      opacity: 0.5;
-      transition: .6s; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside .up {
-        font-size: 20pt;
-        margin-top: 30px; } }
   .leftside .info {
     padding-top: 20px;
     display: none;
@@ -168,6 +153,14 @@ a {
   .leftside .hr {
     padding-bottom: 20px;
     border-top: solid 1px black; }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    .leftside {
+      position: relative;
+      width: 99.0740740741%;
+      float: left;
+      margin-left: 0.462962963%;
+      margin-right: 0.462962963%;
+      top: 0px; } }
 
 .rightside {
   width: 74.0740740741%;
@@ -253,12 +246,6 @@ a {
   box-shadow: 3px 4px 12px -4px rgba(0, 0, 0, 0.55);
   margin-top: 2.5vh;
   transition: .2s; }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .item2 {
-      width: 99.0740740741%;
-      float: left;
-      margin-left: 0.462962963%;
-      margin-right: 0.462962963%; } }
   .item2:hover {
     transform: scale(1.03);
     transition: .6s; }
@@ -288,13 +275,9 @@ a {
     float: left;
     margin-left: 0.462962963%;
     margin-right: 0.462962963%; }
-
-hr {
-  margin-right: 10px; }
-
-footer {
-  width: 82.4074074074%;
-  float: left;
-  margin-left: 0.462962963%;
-  margin-right: 0.462962963%;
-  height: 50vh; }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    .item2 {
+      width: 99.0740740741%;
+      float: left;
+      margin-left: 0.462962963%;
+      margin-right: 0.462962963%; } }
