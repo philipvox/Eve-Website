@@ -188,8 +188,8 @@ footer {
   margin-right: 0.462962963%; }
   .item img {
     max-width: 100%;
-    margin-top: 2.5vh;
-    margin-bottom: 2.55vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
     -webkit-box-shadow: 3px 4px 12px -4px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 3px 4px 12px -4px rgba(0, 0, 0, 0.55);
     box-shadow: 3px 4px 12px -4px rgba(0, 0, 0, 0.55); }
