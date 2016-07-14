@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".filter").each(function(){var t=$(this).attr("src");$(this).css("background","url("+t+")")})});
