@@ -58,13 +58,6 @@ footer {
   top: 23px;
   padding-bottom: 20px;
   background-color: none; }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .leftside {
-      width: 99.0740740741%;
-      float: left;
-      margin-left: 0.462962963%;
-      margin-right: 0.462962963%;
-      margin: 0 0 2.5vh 0; } }
   .leftside h1 {
     margin: 0px;
     margin-top: 0px;
@@ -91,6 +84,24 @@ footer {
   .leftside a {
     padding-right: 15px;
     display: block; }
+  .leftside p {
+    font-size: 9pt;
+    font-family: "Libre Baskerville", serif;
+    padding: 0px 30px 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 15.6pt;
+    color: black;
+    font-weight: 100;
+    transition: .6s; }
+    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      .leftside p {
+        font-size: 15pt;
+        line-height: 25pt;
+        padding: 30px;
+        max-width: 200ch;
+        font-weight: 100;
+        color: slategrey; } }
   .leftside .about {
     width: 100%;
     margin-left: 30px;
@@ -116,14 +127,14 @@ footer {
     font-family: "Playfair Display", serif;
     cursor: pointer;
     z-index: 0; }
-    .leftside .menu:hover {
-      opacity: 0.5;
-      transition: .6s;
-      mix-blend-mode: multiply; }
     @media only screen and (min-width: 321px) and (max-width: 1023px) {
       .leftside .menu {
         font-size: 20pt;
         margin-top: 30px; } }
+    .leftside .menu:hover {
+      opacity: 0.5;
+      transition: .6s;
+      mix-blend-mode: multiply; }
   .leftside .list {
     padding-top: 20px;
     display: none;
@@ -132,24 +143,6 @@ footer {
     padding-top: 20px;
     display: none;
     overflow: hidden; }
-  .leftside p {
-    font-size: 9pt;
-    font-family: "Libre Baskerville", serif;
-    padding: 0px 30px 0 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 15.6pt;
-    color: black;
-    font-weight: 100;
-    transition: .6s; }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
-      .leftside p {
-        font-size: 15pt;
-        line-height: 25pt;
-        padding: 30px;
-        max-width: 200ch;
-        font-weight: 100;
-        color: slategrey; } }
   .leftside .hr {
     padding-bottom: 20px;
     border-top: solid 1px black; }
@@ -160,7 +153,8 @@ footer {
       float: left;
       margin-left: 0.462962963%;
       margin-right: 0.462962963%;
-      top: 0px; } }
+      top: 0px;
+      margin: 0 0 2.5vh 0; } }
 
 .rightside {
   width: 74.0740740741%;
@@ -174,28 +168,8 @@ footer {
       margin-left: 0.462962963%;
       margin-right: 0.462962963%; } }
 
-.title {
-  position: fixed;
-  top: 155px;
-  right: -110px;
-  width: 300px;
-  color: #434e58;
-  transform: rotate(90deg);
-  font-family: "Libre Baskerville", serif; }
-  .title h1 {
-    font-size: 15pt;
-    font-weight: 100; }
-
 .item {
   transition: .2s; }
-  .item:hover {
-    transition: .6s; }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .item {
-      width: 99.0740740741%;
-      float: left;
-      margin-left: 0.462962963%;
-      margin-right: 0.462962963%; } }
   .item img {
     max-height: 95vh;
     margin-top: 2.5vh;
@@ -233,6 +207,14 @@ footer {
         line-height: 25pt;
         padding: 10px 10px 20px 10px;
         max-width: 200ch; } }
+  .item:hover {
+    transition: .6s; }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    .item {
+      width: 99.0740740741%;
+      float: left;
+      margin-left: 0.462962963%;
+      margin-right: 0.462962963%; } }
 
 .item2 {
   width: 32.4074074074%;
@@ -246,18 +228,6 @@ footer {
   box-shadow: 3px 4px 12px -4px rgba(0, 0, 0, 0.55);
   margin-top: 2.5vh;
   transition: .2s; }
-  .item2:hover {
-    transform: scale(1.03);
-    transition: .6s; }
-  .item2 .label {
-    width: 82.4074074074%;
-    float: left;
-    margin-left: 0.462962963%;
-    margin-right: 0.462962963%;
-    color: black;
-    background-color: none;
-    margin: 1vh 0vh 2.5vh 0;
-    padding: 15px; }
   .item2 h1 {
     font-size: 20pt;
     font-weight: 100;
@@ -270,6 +240,18 @@ footer {
     max-width: 70ch;
     margin: 0;
     line-height: 12pt; }
+  .item2:hover {
+    transform: scale(1.03);
+    transition: .6s; }
+  .item2 .label {
+    width: 82.4074074074%;
+    float: left;
+    margin-left: 0.462962963%;
+    margin-right: 0.462962963%;
+    color: black;
+    background-color: none;
+    margin: 1vh 0vh 2.5vh 0;
+    padding: 15px; }
   .item2 .imgcovers {
     width: 99.0740740741%;
     float: left;
@@ -281,3 +263,15 @@ footer {
       float: left;
       margin-left: 0.462962963%;
       margin-right: 0.462962963%; } }
+
+.title {
+  position: fixed;
+  top: 155px;
+  right: -110px;
+  width: 300px;
+  color: #434e58;
+  transform: rotate(90deg);
+  font-family: "Libre Baskerville", serif; }
+  .title h1 {
+    font-size: 15pt;
+    font-weight: 100; }

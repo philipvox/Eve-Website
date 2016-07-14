@@ -1,0 +1,261 @@
+//---------------Custom Lightbox---------------------------
+.backdrop{
+    position: fixed;
+    top: 0;
+    background:black;
+    @include span(12);
+    height: 100vh;
+    z-index: 20;
+    opacity: .8;
+    display: none;
+    transition: .6s;
+}
+//---------------Spacer---------------------------
+.bumber{
+    @include span(3);
+    height:50vh;
+    @include respond-to(medium-screens) { display: none; }
+}
+//---------------menu / nav ---------------------------
+.leftside{
+    @include span(3);
+    position: fixed;
+    top:23px;
+    padding-bottom:20px;
+    background-color:$mainfill;
+    h1{
+        margin:0px;
+        margin-top:0px;
+        margin-bottom:20px;
+        text-transform: uppercase;
+        padding-left:25px;
+        font-size:35pt;
+        font-family: $oneserif;
+        font-weight:100;    
+        @include respond-to(medium-screens) {  
+            font-size:50pt;
+        }
+    }
+
+    h2{
+        margin: 0 0 20px 30px;
+        font-size:10pt;
+        font-family: $twoserif;
+        font-weight:100;  
+        line-height: 15pt;
+        @include respond-to(medium-screens) { 
+            font-size: 18pt;
+            line-height: 25pt;
+            max-width: 200ch;
+        }  
+    }
+
+    a{
+        padding-right:15px;
+        display: block;
+    }
+
+    p{
+
+        // height: 0px;
+        font-size:9pt;
+        font-family: $twoserif;
+        padding: 0px 30px 0 30px;
+        padding-left:30px;
+        padding-right:30px;
+        line-height: 15.6pt;
+        color:black;
+        font-weight: 100;
+        transition: .6s;
+        @include respond-to(medium-screens) { 
+            font-size: 15pt;
+            line-height: 25pt;
+            padding:30px;
+            max-width: 200ch;
+            font-weight: 100;
+            color:slategrey;
+        }
+    }
+
+    .about{
+        width: 100%;
+        margin-left: 30px;
+        font-size: 11pt;
+        text-transform: uppercase;
+        margin-top: 2px;
+        font-family: $oneserif; 
+        &:hover{
+            opacity: 0.5;
+            transition: .6s;
+            mix-blend-mode:multiply;
+        }
+        cursor: pointer;
+        z-index: 0;
+        @include respond-to(medium-screens) { 
+
+            font-size: 20pt;
+            margin-top: 30px;
+        }
+    }
+
+    .menu{
+        margin-left: 30px;
+        font-size: 11pt;
+        text-transform: uppercase;
+        margin-top: 2px;
+        font-family: $oneserif; 
+        cursor: pointer;
+        z-index: 0;
+        @include respond-to(medium-screens) { 
+            font-size: 20pt;
+            margin-top: 30px;
+        }
+
+        &:hover{
+            opacity: 0.5;
+            transition: .6s;
+            mix-blend-mode:multiply;
+        }
+
+    }
+
+    .list{
+        padding-top:20px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .info{
+        padding-top:20px;
+        display: none;
+        overflow: hidden;
+
+    }
+
+    .hr{
+        padding-bottom:20px;
+        border-top: $border;
+    }
+
+    @include respond-to(medium-screens) { 
+            position: relative;
+            @include span($full); 
+            top:0px;
+            margin: 0 0 2.5vh 0;
+        }
+}
+//---------------Main Content Container and Type Style's---------------------------
+.rightside{
+    @include span(9);
+    @include respond-to(medium-screens) { @include span($full); }
+}
+//---------------Content---------------------------
+.item{
+    transition: .2s;
+    img{
+        max-height: 95vh;
+        margin-top: 2.5vh;
+        margin-bottom: 2.55vh;
+    @include box-shadow($oneshadow);
+    @include respond-to(medium-screens) { 
+        @include span($full); 
+        margin: 0.5vh 0 0.5vh 0;
+        }
+    }
+
+    h1{
+        font-size: 20pt;
+        font-weight: 100;
+        font-style: italic;
+        margin: 0;
+    @include respond-to(medium-screens) { 
+        font-size: 30pt;
+        padding:10px 0px 0px 10px;
+        max-width: 120ch;
+        }
+    }
+
+    p{
+        font-size: 9pt;
+        font-weight: 100;
+        padding-top:10px;
+        max-width: 30ch;
+        margin: 0;
+        line-height: 12pt;
+    @include respond-to(medium-screens) { 
+        font-size: 18pt;
+        line-height: 25pt;
+        padding:10px 10px 20px 10px;
+        max-width: 200ch;
+        }
+    }
+    &:hover{
+        transition: .6s;
+    }
+    @include respond-to(medium-screens) { 
+        @include span($full); 
+    }
+}
+//---------------Home Page Navagation---------------------------
+.item2{
+    @include span(4);
+    height: 45vh;
+    overflow: hidden;
+    @include box-shadow($oneshadow);
+    margin-top: 2.5vh;
+    transition: .2s;
+
+    h1{
+        font-size: 20pt;
+        font-weight: 100;
+        font-style: italic;
+        margin: 0;
+    }
+
+    p{
+        font-size: 9pt;
+        font-weight: 100;
+        padding-top:5px;
+        max-width: 70ch;
+        margin: 0;
+        line-height: 12pt;
+    }
+
+    &:hover{
+        transform: scale(1.03);
+        transition: .6s;
+    }
+
+    .label{
+        @include span(10);
+        color:black;
+        background-color:$mainfill;
+        margin: 1vh 0vh 2.5vh 0;
+        padding: 15px;
+    }
+
+    .imgcovers{
+        @include span(12);
+    }
+
+    @include respond-to(medium-screens) { 
+        @include span($full); 
+    }
+}
+//---------------Title---------------------------
+.title{
+    position: fixed;
+    top:155px;
+    right: -110px;
+    width: 300px;
+    color:#434e58;
+    transform: rotate(90deg);
+    font-family: $twoserif;
+    h1{
+        font-size: 15pt;
+        font-weight: 100;
+    }
+}
+    // @include respond-to(handhelds) { @include span($full); }
+    // @include respond-to(medium-screens) { @include span($half); }
+    // @include respond-to(wide-screens) { @include span($fourth); }
