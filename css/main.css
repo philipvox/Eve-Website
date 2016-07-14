@@ -40,26 +40,51 @@ footer {
   transition: .6s; }
 
 .leftside {
-  width: 49.0740740741%;
+  width: 99.0740740741%;
   float: left;
   margin-left: 0.462962963%;
   margin-right: 0.462962963%;
-  position: absolute;
+  position: fixed;
   top: 23px;
   padding-bottom: 20px;
-  z-index: 10; }
+  z-index: 10;
+  mix-blend-mode: multiply; }
   .leftside h1 {
+    width: 49.0740740741%;
+    float: left;
+    margin-left: 0.462962963%;
+    margin-right: 0.462962963%;
     margin: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    padding-left: 25px;
     font-size: 50pt;
     font-family: "Playfair Display", serif;
     font-weight: 100; }
     @media only screen and (min-width: 321px) and (max-width: 1023px) {
       .leftside h1 {
         font-size: 50pt; } }
+  .leftside h3 {
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 5px 0 5px 10px;
+    font-size: 20pt;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    background-color: black; }
+    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      .leftside h3 {
+        font-size: 50pt; } }
+  .leftside .nav {
+    display: none;
+    position: fixed;
+    left: 15px; }
+  .leftside .logo {
+    position: fixed;
+    left: 15px; }
   .leftside h2 {
     margin: 0 0 20px 30px;
     font-size: 10pt;
@@ -93,7 +118,10 @@ footer {
         font-weight: 100;
         color: slategrey; } }
   .leftside .about {
-    width: 100%;
+    width: 24.0740740741%;
+    float: left;
+    margin-left: 0.462962963%;
+    margin-right: 0.462962963%;
     margin-left: 30px;
     font-size: 11pt;
     text-transform: uppercase;
@@ -110,6 +138,10 @@ footer {
         font-size: 20pt;
         margin-top: 30px; } }
   .leftside .menu {
+    width: 24.0740740741%;
+    float: left;
+    margin-left: 0.462962963%;
+    margin-right: 0.462962963%;
     margin-left: 30px;
     font-size: 11pt;
     text-transform: uppercase;

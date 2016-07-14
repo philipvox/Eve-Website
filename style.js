@@ -62,3 +62,19 @@ $('.rightside').isotope({
   //   columnWidth: '.grid-sizer'
   // }
 });
+$(window).scroll(function() {
+        var scrolpos = $(window).scrollTop();
+        if (scrolpos <= 50) {
+            
+          $('.nav').fadeOut(200, function() {
+                $('.logo').fadeIn('50');
+            });
+        } else {
+            
+             
+               $('.logo').fadeOut(200, function() {
+                $('.nav').fadeIn('50');
+            });
+        }
+        
+});

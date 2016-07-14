@@ -18,24 +18,57 @@
 // }
 //---------------menu / nav ---------------------------
 .leftside{
-    @include span(6);
-    position: absolute;
+    @include span(12);
+    position: fixed;
     top:23px;
     padding-bottom:20px;
     // background-color:white;
     z-index: 10;
+    mix-blend-mode:multiply;
     h1{
+        @include span(6);
         margin:0px;
         margin-top:0px;
         margin-bottom:20px;
         text-transform: uppercase;
-        padding-left:25px;
+        // padding-left:25px;
         font-size:50pt;
         font-family: $oneserif;
         font-weight:100;    
         @include respond-to(medium-screens) {  
             font-size:50pt;
         }
+    }
+    h3{
+        margin:0px;
+        margin-top:0px;
+        margin-bottom:20px;
+        text-transform: uppercase;
+        // margin-left:25px;
+        padding:5px 0 5px 10px;
+        font-size:20pt;
+        color:white;
+        font-family: $oneserif;
+        font-weight:100;    
+        @include respond-to(medium-screens) {  
+            font-size:50pt;
+        }
+        background-color:black;
+
+    }
+    .nav{
+        // margin-left:-500px;
+        display: none;
+        position: fixed;
+        left: 15px;
+        // transition: .2s;
+        
+    }
+    .logo{
+        
+        position: fixed;
+        // transition: .2s;
+        left: 15px;
     }
 
     h2{
@@ -77,7 +110,7 @@
     }
 
     .about{
-        width: 100%;
+        @include span(3);
         margin-left: 30px;
         font-size: 11pt;
         text-transform: uppercase;
@@ -97,6 +130,7 @@
     }
 
     .menu{
+        @include span(3);
         margin-left: 30px;
         font-size: 11pt;
         text-transform: uppercase;
